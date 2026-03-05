@@ -244,13 +244,13 @@ function animateOnScroll() {
     }, { threshold: 0.06, rootMargin: '0px 0px -30px 0px' });
 
     // Individual elements — fade-slide-up
-    document.querySelectorAll('.feature-card, .showcase-card, .trust-box, .why-card, .detail-item, .chip, .section-title, .section-subtitle, .badge-pill, .hero-title, .hero-desc, .hero-btns, .stats-bar, .search-box, .cta-content').forEach(el => {
+    document.querySelectorAll('.feature-card, .showcase-card, .trust-box, .why-card, .detail-item, .chip, .section-title, .section-subtitle, .badge-pill, .hero-title, .hero-desc, .hero-btns, .stats-bar, .search-box, .cta-content, .pricing-hero-card, .domain-card, .models-showcase, .models-title, .models-subtitle').forEach(el => {
         el.classList.add('reveal');
         observer.observe(el);
     });
 
     // Staggered grids — children animate one by one
-    document.querySelectorAll('.bento-grid, .showcase-grid, .trust-boxes, .why-grid, .detail-list, .category-chips').forEach(el => {
+    document.querySelectorAll('.bento-grid, .showcase-grid, .trust-boxes, .why-grid, .detail-list, .category-chips, .model-chips, .domains-grid, .payment-icons, .price-features').forEach(el => {
         el.classList.add('reveal-stagger');
         observer.observe(el);
     });

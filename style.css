@@ -1151,6 +1151,383 @@ a {
     animation: softGlow 3s ease-in-out infinite;
 }
 
+/* ============ AI MODELS SHOWCASE ============ */
+.models-showcase {
+    margin-top: 48px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--card-radius);
+    padding: 36px;
+}
+
+.models-title {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.models-subtitle {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 32px;
+}
+
+.model-group {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--border-color);
+    border-radius: 14px;
+    padding: 20px 24px;
+    margin-bottom: 14px;
+    transition: var(--transition);
+}
+
+.model-group:hover {
+    border-color: var(--border-hover);
+}
+
+.model-group.claude-highlight {
+    background: linear-gradient(135deg, rgba(217, 119, 6, 0.08), rgba(245, 158, 11, 0.04), rgba(255, 255, 255, 0.02));
+    border-color: rgba(245, 158, 11, 0.3);
+    box-shadow: 0 0 30px rgba(245, 158, 11, 0.08);
+    animation: claudeGlow 4s ease-in-out infinite;
+}
+
+@keyframes claudeGlow {
+
+    0%,
+    100% {
+        box-shadow: 0 0 20px rgba(245, 158, 11, 0.06);
+    }
+
+    50% {
+        box-shadow: 0 0 40px rgba(245, 158, 11, 0.15);
+    }
+}
+
+.model-group-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+.model-group-header h4 {
+    font-family: var(--font-display);
+    font-size: 1.05rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hot-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 3px 10px;
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(239, 68, 68, 0.15));
+    border: 1px solid rgba(245, 158, 11, 0.3);
+    border-radius: 20px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #f59e0b;
+    animation: softGlow 3s ease-in-out infinite;
+}
+
+.model-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.model-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 7px 14px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    transition: var(--transition);
+}
+
+.model-chip:hover {
+    border-color: var(--border-hover);
+    color: var(--text-primary);
+    transform: translateY(-2px);
+}
+
+.model-chip.featured {
+    background: rgba(59, 130, 246, 0.08);
+    border-color: rgba(59, 130, 246, 0.25);
+    color: var(--text-primary);
+}
+
+.claude-highlight .model-chip.featured {
+    background: rgba(245, 158, 11, 0.1);
+    border-color: rgba(245, 158, 11, 0.3);
+    color: #fbbf24;
+}
+
+.chip-multiplier {
+    padding: 1px 6px;
+    background: rgba(59, 130, 246, 0.15);
+    border-radius: 6px;
+    font-size: 0.68rem;
+    font-weight: 700;
+    color: var(--accent-light);
+}
+
+.claude-highlight .chip-multiplier {
+    background: rgba(245, 158, 11, 0.15);
+    color: #f59e0b;
+}
+
+.models-note {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    margin-top: 20px;
+    padding: 12px;
+    background: rgba(34, 197, 94, 0.06);
+    border: 1px solid rgba(34, 197, 94, 0.15);
+    border-radius: 10px;
+}
+
+/* ============ PRICING HERO CARD ============ */
+.pricing-hero-card {
+    max-width: 700px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.06), var(--bg-card), rgba(167, 139, 250, 0.04));
+    border: 2px solid rgba(59, 130, 246, 0.25);
+    border-radius: var(--card-radius);
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    animation: borderGlow 4s ease-in-out infinite;
+}
+
+.pricing-hero-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.06) 0%, transparent 60%);
+    animation: floatY 6s ease-in-out infinite;
+    pointer-events: none;
+}
+
+.pricing-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 28px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+}
+
+.price-tag {
+    text-align: center;
+}
+
+.price-old {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    text-decoration: line-through;
+    margin-bottom: 4px;
+}
+
+.price-main {
+    display: block;
+    font-family: var(--font-display);
+    font-size: 3.5rem;
+    font-weight: 800;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1.1;
+}
+
+.price-label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--accent-light);
+    margin-top: 4px;
+}
+
+.price-features {
+    text-align: left;
+}
+
+.price-feature {
+    padding: 5px 0;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.payment-methods {
+    margin-bottom: 24px;
+    position: relative;
+    z-index: 1;
+}
+
+.payment-methods h4 {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 14px;
+    color: var(--text-primary);
+}
+
+.payment-icons {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.payment-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 22px;
+    border-radius: 12px;
+    font-size: 0.88rem;
+    font-weight: 700;
+    transition: var(--transition);
+    cursor: default;
+}
+
+.payment-item:hover {
+    transform: translateY(-3px);
+}
+
+.payment-item.bkash {
+    background: rgba(227, 24, 99, 0.12);
+    border: 1px solid rgba(227, 24, 99, 0.3);
+    color: #e31863;
+}
+
+.payment-item.nagad {
+    background: rgba(243, 112, 33, 0.12);
+    border: 1px solid rgba(243, 112, 33, 0.3);
+    color: #f37021;
+}
+
+.payment-item.rocket {
+    background: rgba(142, 36, 170, 0.12);
+    border: 1px solid rgba(142, 36, 170, 0.3);
+    color: #8e24aa;
+}
+
+.payment-item.bank {
+    background: rgba(59, 130, 246, 0.12);
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    color: var(--accent-light);
+}
+
+.pricing-cta {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    justify-content: center;
+}
+
+/* ============ DOMAINS GRID ============ */
+.domains-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.domain-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--card-radius);
+    padding: 30px;
+    text-align: center;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.domain-card:hover {
+    border-color: var(--border-hover);
+    transform: translateY(-5px);
+    box-shadow: 0 0 35px rgba(59, 130, 246, 0.1);
+}
+
+.domain-icon {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(59, 130, 246, 0.08);
+    border: 1px solid rgba(59, 130, 246, 0.12);
+    border-radius: 16px;
+    margin: 0 auto 16px;
+}
+
+.domain-card h3 {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.domain-card p {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    line-height: 1.6;
+    margin-bottom: 14px;
+}
+
+.domain-ext {
+    display: inline-block;
+    padding: 5px 16px;
+    background: rgba(59, 130, 246, 0.1);
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--accent-light);
+    letter-spacing: 0.5px;
+}
+
+/* ============ CTA PAYMENT INFO ============ */
+.cta-payment-info {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.cta-payment-info span {
+    padding: 5px 16px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
 /* ============ RESPONSIVE ============ */
 @media (max-width: 1024px) {
     .bento-grid {
@@ -1644,6 +2021,159 @@ a {
     .why-card p {
         font-size: 0.72rem;
         line-height: 1.5;
+    }
+
+    /* Models showcase — compact */
+    .models-showcase {
+        margin-top: 24px;
+        padding: 16px;
+        border-radius: 14px;
+    }
+
+    .models-title {
+        font-size: 1.1rem;
+        margin-bottom: 4px;
+    }
+
+    .models-subtitle {
+        font-size: 0.76rem;
+        margin-bottom: 18px;
+    }
+
+    .model-group {
+        padding: 12px;
+        border-radius: 10px;
+        margin-bottom: 8px;
+    }
+
+    .model-group-header {
+        gap: 8px;
+        margin-bottom: 10px;
+    }
+
+    .model-group-header img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .model-group-header h4 {
+        font-size: 0.85rem;
+    }
+
+    .hot-badge {
+        font-size: 0.6rem;
+        padding: 2px 7px;
+    }
+
+    .model-chips {
+        gap: 5px;
+    }
+
+    .model-chip {
+        padding: 4px 10px;
+        font-size: 0.7rem;
+        border-radius: 7px;
+        gap: 5px;
+    }
+
+    .chip-multiplier {
+        font-size: 0.58rem;
+        padding: 1px 4px;
+    }
+
+    .models-note {
+        font-size: 0.74rem;
+        padding: 8px;
+        margin-top: 12px;
+    }
+
+    /* Pricing card — mobile */
+    .pricing-hero-card {
+        padding: 20px 16px;
+        border-radius: 16px;
+    }
+
+    .pricing-top {
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    .price-main {
+        font-size: 2.6rem;
+    }
+
+    .price-features {
+        text-align: left;
+    }
+
+    .price-feature {
+        font-size: 0.78rem;
+        padding: 3px 0;
+    }
+
+    .payment-methods h4 {
+        font-size: 0.88rem;
+        margin-bottom: 10px;
+    }
+
+    .payment-icons {
+        gap: 8px;
+    }
+
+    .payment-item {
+        padding: 8px 16px;
+        font-size: 0.78rem;
+        border-radius: 10px;
+    }
+
+    /* Domains — 1 column on mobile */
+    .domains-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .domain-card {
+        padding: 20px 16px;
+        border-radius: 14px;
+    }
+
+    .domain-icon {
+        width: 44px;
+        height: 44px;
+        border-radius: 12px;
+        margin-bottom: 12px;
+    }
+
+    .domain-icon img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .domain-card h3 {
+        font-size: 0.92rem;
+        margin-bottom: 6px;
+    }
+
+    .domain-card p {
+        font-size: 0.76rem;
+        margin-bottom: 10px;
+    }
+
+    .domain-ext {
+        font-size: 0.7rem;
+        padding: 4px 12px;
+    }
+
+    /* CTA payment info */
+    .cta-payment-info {
+        gap: 8px;
+        margin-bottom: 14px;
+    }
+
+    .cta-payment-info span {
+        font-size: 0.7rem;
+        padding: 4px 12px;
     }
 
     /* CTA — compact */
