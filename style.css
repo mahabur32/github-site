@@ -1358,6 +1358,66 @@ a {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     line-height: 1.1;
+    position: relative;
+    z-index: 1;
+}
+
+.price-glow-wrap {
+    position: relative;
+    display: inline-block;
+}
+
+.price-glow-wrap::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120%;
+    height: 140%;
+    background: radial-gradient(ellipse, rgba(59, 130, 246, 0.3) 0%, rgba(167, 139, 250, 0.15) 40%, transparent 70%);
+    border-radius: 50%;
+    filter: blur(20px);
+    animation: priceGlow 3s ease-in-out infinite;
+    z-index: 0;
+    pointer-events: none;
+}
+
+@keyframes priceGlow {
+
+    0%,
+    100% {
+        opacity: 0.6;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1.15);
+    }
+}
+
+/* SVG inline icons */
+.section-icon {
+    vertical-align: -4px;
+    flex-shrink: 0;
+}
+
+.check-icon {
+    vertical-align: -3px;
+    flex-shrink: 0;
+    margin-right: 2px;
+}
+
+/* Payment item images */
+.payment-item img {
+    vertical-align: -4px;
+    border-radius: 3px;
+}
+
+.cta-payment-info span img {
+    vertical-align: -3px;
+    border-radius: 2px;
 }
 
 .price-label {
@@ -1519,6 +1579,9 @@ a {
 }
 
 .cta-payment-info span {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
     padding: 5px 16px;
     background: rgba(255, 255, 255, 0.06);
     border: 1px solid rgba(255, 255, 255, 0.12);
