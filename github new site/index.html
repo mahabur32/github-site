@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binimoy Tech — GitHub Student Pack & Copilot সার্ভিস</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated BG particles -->
+    <div class="bg-grid"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <div class="logo-mark">B</div>
+                <span>Binimoy Tech</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#services">সার্ভিস</a></li>
+                <li><a href="#pricing">প্যাকেজ</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact" class="nav-cta">যোগাযোগ</a></li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-nav-overlay" id="mobileNavOverlay">
+        <div class="mobile-nav-content">
+            <a href="#services" class="mobile-nav-link">সার্ভিস</a>
+            <a href="#pricing" class="mobile-nav-link">প্যাকেজ</a>
+            <a href="#faq" class="mobile-nav-link">FAQ</a>
+            <a href="#contact" class="mobile-nav-link">যোগাযোগ</a>
+            <a href="https://wa.me/8801893931657" class="mobile-nav-wa" target="_blank" rel="noopener noreferrer">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                WhatsApp এ মেসেজ করুন
+            </a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero" id="hero">
+        <div class="hero-glow hero-glow-1"></div>
+        <div class="hero-glow hero-glow-2"></div>
+        <div class="container hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                স্টুডেন্ট ডেভেলপারদের জন্য
+            </div>
+            <h1>প্রিমিয়াম ডেভেলপার<br><span class="gradient-text">টুলস এক জায়গায়</span></h1>
+            <p class="hero-desc">GitHub Student Developer Pack এবং Copilot Pro — সাশ্রয়ী মূল্যে আপনার নিজের অ্যাকাউন্টে অ্যাক্টিভেট করুন।</p>
+            <div class="hero-actions">
+                <a href="#pricing" class="btn btn-primary">
+                    <span>প্যাকেজ দেখুন</span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="https://wa.me/8801893931657" class="btn btn-glass" target="_blank" rel="noopener noreferrer">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    WhatsApp
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <strong>48+</strong>
+                    <span>ডেভেলপার টুলস</span>
+                </div>
+                <div class="stat-card">
+                    <strong>২ বছর</strong>
+                    <span>ভ্যালিডিটি</span>
+                </div>
+                <div class="stat-card">
+                    <strong>100%</strong>
+                    <span>পার্সোনাল অ্যাকাউন্ট</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Trusted Marquee -->
+    <div class="marquee-section">
+        <div class="marquee-track">
+            <div class="marquee-content">
+                <span class="marquee-item">GitHub Copilot</span>
+                <span class="marquee-dot">●</span>
+                <span class="marquee-item">JetBrains</span>
+                <span class="marquee-dot">●</span>
+                <span class="marquee-item">DigitalOcean</span>
+                <span class="marquee-dot">●</span>
+                <span class="marquee-item">Notion</span>
+                <span class="marquee-dot">●</span>
+                <span class="marquee-item">Heroku</span>
+                <span class="marquee-dot">●</span>
+                <span class="marquee-item">VS Code</span>
+                <span class="marquee-dot">●</span>
+                <span class="marquee-item">Claude AI</span>
+                <span class="marquee-dot">●</span>
+                <span class="marquee-item">GPT-5.4</span>
+                <span class="marquee-dot">●</span>
+                <span class="marquee-item">Gemini Pro</span>
+                <span class="marquee-dot">●</span>
+                <span class="marquee-item">GitHub Copilot</span>
+                <span class="marquee-dot">●</span>
+                <span class="marquee-item">JetBrains</span>
+                <span class="marquee-dot">●</span>
+                <span class="marquee-item">DigitalOcean</span>
+                <span class="marquee-dot">●</span>
+                <span class="marquee-item">Notion</span>
+                <span class="marquee-dot">●</span>
+                <span class="marquee-item">Heroku</span>
+                <span class="marquee-dot">●</span>
+                <span class="marquee-item">VS Code</span>
+                <span class="marquee-dot">●</span>
+                <span class="marquee-item">Claude AI</span>
+                <span class="marquee-dot">●</span>
+                <span class="marquee-item">GPT-5.4</span>
+                <span class="marquee-dot">●</span>
+                <span class="marquee-item">Gemini Pro</span>
+                <span class="marquee-dot">●</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Pricing</span>
+                <h2>প্যাকেজ <span class="gradient-text">বেছে নিন</span></h2>
+                <p>আপনার প্রয়োজন অনুযায়ী প্যাকেজ নির্বাচন করুন</p>
+            </div>
+            <div class="pricing-grid">
+                <!-- Pack 1 -->
+                <div class="pricing-card popular">
+                    <div class="popular-badge">🔥 Popular</div>
+                    <div class="card-header">
+                        <span class="pack-tag tag-orange">48+ টুলস</span>
+                        <div class="price">৳১,৫০০</div>
+                        <div class="product-pill">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                            GitHub Student Developer Pack
+                        </div>
+                    </div>
+                    <div class="pack-tags">
+                        <span class="color-tag tag-blue">300 Credits</span>
+                        <span class="color-tag tag-green">Monthly Reset</span>
+                        <span class="color-tag tag-purple">২ বছর</span>
+                    </div>
+                    <div class="card-body">
+                        <ul class="feature-list">
+                            <li class="included">
+                                <span class="dot green"></span>
+                                GitHub Copilot Student অন্তর্ভুক্ত
+                            </li>
+                            <li class="included">
+                                <span class="dot green"></span>
+                                JetBrains সব IDE ফ্রি
+                            </li>
+                            <li class="included">
+                                <span class="dot green"></span>
+                                $200 DigitalOcean ক্রেডিট
+                            </li>
+                            <li class="included">
+                                <span class="dot green"></span>
+                                Notion Plus ফ্রি
+                            </li>
+                            <li class="included">
+                                <span class="dot green"></span>
+                                Heroku ক্রেডিট
+                            </li>
+                            <li class="included">
+                                <span class="dot green"></span>
+                                300 Premium Credits (Monthly Reset)
+                            </li>
+                            <li class="included">
+                                <span class="dot green"></span>
+                                ২ বছর ভ্যালিডিটি
+                            </li>
+                        </ul>
+                        <div class="card-note note-warning">
+                            <span class="note-icon-sm">⚠️</span>
+                            <p>GitHub অ্যাকাউন্ট ৩ দিন পুরানো হতে হবে</p>
+                        </div>
+                        <div class="card-note note-info">
+                            <span class="note-icon-sm">🌐</span>
+                            <p>সবার জন্য উন্মুক্ত</p>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/8801893931657?text=আমি%20প্যাক%20১%20(Student%20Developer%20Pack)%20নিতে%20চাই" class="btn-cta btn-cta-orange" target="_blank" rel="noopener noreferrer">
+                        বিস্তারিত দেখুন
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+
+                <!-- Pack 2 -->
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <span class="pack-tag tag-purple">Copilot Pro Only</span>
+                        <div class="price">৳১,৫০০</div>
+                        <div class="product-pill">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                            GitHub Copilot Pro
+                        </div>
+                    </div>
+                    <div class="pack-tags">
+                        <span class="color-tag tag-blue">300 Credits</span>
+                        <span class="color-tag tag-green">Monthly Reset</span>
+                        <span class="color-tag tag-purple">২ বছর</span>
+                    </div>
+                    <div class="ai-models">
+                        <span class="model-badge model-claude">Claude Sonnet 4.6 Latest</span>
+                        <span class="model-badge model-gpt">GPT-5.4 Latest</span>
+                        <span class="model-badge model-gemini">Gemini 2.5 Pro</span>
+                        <span class="model-badge model-grok">Grok Code Fast 1</span>
+                        <span class="model-badge model-more">+১৯ আরো মডেল All</span>
+                    </div>
+                    <div class="card-body">
+                        <ul class="feature-list">
+                            <li class="included">
+                                <span class="dot green"></span>
+                                GitHub Copilot Pro
+                            </li>
+                            <li class="included">
+                                <span class="dot green"></span>
+                                300 Credits (Monthly Reset)
+                            </li>
+                            <li class="included">
+                                <span class="dot green"></span>
+                                ২৩টি AI মডেল অ্যাক্সেস
+                            </li>
+                            <li class="included">
+                                <span class="dot green"></span>
+                                Chat + Autocomplete (VS Code)
+                            </li>
+                            <li class="included">
+                                <span class="dot green"></span>
+                                Agent Mode & Multi-file Edit
+                            </li>
+                            <li class="included">
+                                <span class="dot green"></span>
+                                ২ বছর ভ্যালিডিটি
+                            </li>
+                        </ul>
+                        <div class="card-note note-info">
+                            <span class="note-icon-sm">💡</span>
+                            <p>শুধু Copilot Pro + VS Code সাপোর্ট</p>
+                        </div>
+                        <div class="card-note note-info">
+                            <span class="note-icon-sm">🌐</span>
+                            <p>সবার জন্য উন্মুক্ত</p>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/8801893931657?text=আমি%20প্যাক%20২%20(Copilot%20Pro)%20নিতে%20চাই" class="btn-cta btn-cta-purple" target="_blank" rel="noopener noreferrer">
+                        বিস্তারিত দেখুন
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Copilot Feature Section -->
+    <section class="copilot-section" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Features</span>
+                <h2>GitHub Copilot — <span class="gradient-text">AI কোডিং অ্যাসিস্ট্যান্ট</span></h2>
+                <p>উভয় প্যাকেজে অন্তর্ভুক্ত। কোড লেখা, ডিবাগ এবং টেস্ট — সব কিছু AI দিয়ে।</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon-wrap"><div class="feature-icon">🤖</div></div>
+                    <h3>Agent Mode</h3>
+                    <p>Multi-file এডিট এবং অটোমেটেড কোডিং</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon-wrap"><div class="feature-icon">💬</div></div>
+                    <h3>Chat + Autocomplete</h3>
+                    <p>VS Code এ রিয়েল-টাইম AI সাজেশন</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon-wrap"><div class="feature-icon">🧠</div></div>
+                    <h3>২৩+ AI মডেল</h3>
+                    <p>Claude, GPT, Gemini, Grok সহ আরো মডেল</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon-wrap"><div class="feature-icon">🔄</div></div>
+                    <h3>300 Premium Credits</h3>
+                    <p>প্রতি মাসে রিসেট হয়</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Process</span>
+                <h2>কিভাবে <span class="gradient-text">কাজ করে?</span></h2>
+                <p>মাত্র ৩টি সহজ ধাপে আপনার অ্যাকাউন্ট রেডি</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">১</div>
+                    <div class="step-line"></div>
+                    <h3>পেমেন্ট করুন</h3>
+                    <p>bKash / Nagad / Rocket এ পেমেন্ট পাঠান</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">২</div>
+                    <div class="step-line"></div>
+                    <h3>2FA চালু করুন</h3>
+                    <p>আপনার GitHub অ্যাকাউন্টে Two-Factor Authentication চালু করুন</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">৩</div>
+                    <h3>ইউজারনেম দিন</h3>
+                    <p>WhatsApp এ আপনার GitHub ইউজারনেম পাঠান — ব্যাস!</p>
+                </div>
+            </div>
+            <div class="process-note">
+                <div class="note-icon">⏱</div>
+                <p>আমাদের কাজ করতে ৫-১০ মিনিট সময় লাগে। এরপর ৭২ ঘন্টার মধ্যে আপনার অ্যাকাউন্টে অ্যাক্টিভেট হবে।</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">FAQ</span>
+                <h2>সচরাচর <span class="gradient-text">জিজ্ঞাসা</span></h2>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="faq-icon">🔐</span>
+                        <span class="faq-text">Personal নাকি Shared account?</span>
+                        <span class="faq-toggle"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>এটি সম্পূর্ণ আপনার <strong>Personal account</strong>। আপনার নিজের GitHub অ্যাকাউন্টেই সব অ্যাক্টিভেট হবে — কারো সাথে শেয়ার করা হয় না।</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="faq-icon">💰</span>
+                        <span class="faq-text">Payment কি আগে করতে হবে?</span>
+                        <span class="faq-toggle"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>হ্যাঁ, আগে পেমেন্ট করতে হবে। কারণ এটি ডিজিটাল সার্ভিস — পেমেন্ট কনফার্ম হলেই আমরা কাজ শুরু করি।</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="faq-icon">⚙️</span>
+                        <span class="faq-text">Process কি?</span>
+                        <span class="faq-toggle"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
+                    </button>
+                    <div class="faq-answer">
+                        <ol>
+                            <li>পেমেন্ট করুন (bKash / Nagad / Rocket)</li>
+                            <li>আপনার GitHub অ্যাকাউন্টে 2FA চালু করুন</li>
+                            <li>আমাদের আপনার GitHub ইউজারনেম দিন</li>
+                        </ol>
+                        <p>আমাদের কাজ করতে ৫-১০ মিনিট সময় লাগে। এরপর ৭২ ঘন্টার মধ্যে সব অ্যাক্টিভেট হবে।</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="faq-icon">💳</span>
+                        <span class="faq-text">Payment কীভাবে করবো?</span>
+                        <span class="faq-toggle"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="payment-info-faq">
+                            <p><strong>bKash (Personal):</strong> 01783681697</p>
+                            <p><strong>Nagad:</strong> 01783681697</p>
+                            <p><strong>Rocket:</strong> 01783681697</p>
+                        </div>
+                        <p>পেমেন্ট করার পর WhatsApp-এ কনফার্ম করুন।</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / CTA Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-card">
+                <div class="contact-left">
+                    <span class="section-tag">Contact</span>
+                    <h2>অর্ডার করতে বা প্রশ্ন থাকলে<br><span class="gradient-text">WhatsApp-এ যোগাযোগ করুন</span></h2>
+                    <a href="https://wa.me/8801893931657" class="whatsapp-btn" target="_blank" rel="noopener noreferrer">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        <span>01893931657</span>
+                    </a>
+                </div>
+                <div class="contact-right">
+                    <div class="payment-box">
+                        <h3>💳 পেমেন্ট নম্বর</h3>
+                        <div class="payment-number">01783681697</div>
+                        <div class="payment-methods">
+                            <span class="method-tag bkash">bKash</span>
+                            <span class="method-tag nagad">Nagad</span>
+                            <span class="method-tag rocket">Rocket</span>
+                        </div>
+                        <p class="payment-note">পেমেন্ট করার পর WhatsApp-এ স্ক্রিনশট পাঠান</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo-mark sm">B</div>
+                    <span>Binimoy Tech</span>
+                </div>
+                <p class="footer-text">&copy; 2026 Binimoy Tech &mdash; সকল অধিকার সংরক্ষিত</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/8801893931657" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp এ মেসেজ করুন">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        <span class="wa-float-label">Chat</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
